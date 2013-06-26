@@ -1,6 +1,6 @@
 # node-hanrss
 
-A node.js module for getting blogs from [hanrss](http://www.hanrss.)
+A node.js module for getting blog lists from [hanrss](http://www.hanrss)
 
 
 ## Installation
