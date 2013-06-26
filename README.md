@@ -1,6 +1,6 @@
 # node-hanrss
 
-A node.js module for getting blog lists from [hanrss](http://www.hanrss)
+A node.js module for getting blog lists from [hanrss](http://www.hanrss).
 
 [![Build Status](https://travis-ci.org/xissy/node-hanrss.png?branch=master)](https://travis-ci.org/xissy/node-hanrss)
 
@@ -16,7 +16,7 @@ Via [npm](https://npmjs.org):
 
 ### Load in the module
 ```javascript
-  hanrss = require('hanrss');
+  var hanrss = require('hanrss');
 ```
 
 ### Directory class
