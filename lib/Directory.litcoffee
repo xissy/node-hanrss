@@ -37,14 +37,15 @@ So we have to the tags what we need in manual.
         blogs = []
         blogsTr.each (i, element) ->
           thisElement = $(this)
-          trs = thisElement.find('tr')
+          trs = thisElement.find('table tr')
 
 If hanrss changed their tag structure then we may fix below parsing part.
 
           blogs.push
             title: trs.eq(0).text()
-            desc: trs.eq(1).text()
+            description: trs.eq(1).text()
             subscriberCount: Number trs.eq(2).find('.verdana').text()
+            url: thisElement.parent().parent().find('a').eq(0).attr('href')
             rssUrl: querystring.unescape trs.eq(2).find('a').eq(1).attr('href').split('=')[1]
 
         callback null, blogs

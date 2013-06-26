@@ -1,6 +1,6 @@
 # node-hanrss
 
-A node.js module for getting blog lists from [hanrss](http://www.hanrss).
+A node.js module for getting blog lists from [hanrss](http://www.hanrss)
 
 [![Build Status](https://travis-ci.org/xissy/node-hanrss.png?branch=master)](https://travis-ci.org/xissy/node-hanrss)
 
@@ -28,8 +28,8 @@ You can retrieve blog RSS data by type and page number. If you want to
 get all pages' blog data then just use `findByType(...)` function instead.
 
 ```javascript
-  var Dictionary = hanrss.Dictionery;
-  
+  var Directory = hanrss.Directory;
+
   Directory.findByTypeAndPageNo('popular', 0, function(err, blogs) {
     ...
   });
@@ -38,6 +38,12 @@ get all pages' blog data then just use `findByType(...)` function instead.
     ...
   });
 ```
+blogs object is an array which has blog info. blog info consists of:
+  * title (string)
+  * description (string)
+  * subscriberCount (number)
+  * url (string)
+  * rssUrl (string)
 
 
 ## License
