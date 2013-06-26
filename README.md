@@ -28,6 +28,8 @@ You can retrieve blog RSS data by type and page number. If you want to
 get all pages' blog data then just use `findByType(...)` function instead.
 
 ```javascript
+  var Dictionary = hanrss.Dictionery;
+  
   Directory.findByTypeAndPageNo('popular', 0, function(err, blogs) {
     ...
   });
