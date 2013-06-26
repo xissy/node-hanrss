@@ -1,4 +1,4 @@
-# A node.js module for getting blogs from [hanrss](http://www.hanrss.)
+# A node.js module for getting blogs from [hanrss](http://www.hanrss)
 
 The `Directory` class loads each blogs' RSS data from 
 [hanrss directory page](http://www.hanrss.com/directory/).
