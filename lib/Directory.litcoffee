@@ -44,7 +44,7 @@ If hanrss changed their tag structure then we may fix below parsing part.
           blogs.push
             title: trs.eq(0).text()
             description: trs.eq(1).text()
-            subscriberCount: Number trs.eq(2).find('.verdana').text()
+            subscriberCount: Number trs.eq(2).find('.verdana').text().replace(/,/g, '')
             url: thisElement.parent().parent().find('a').eq(0).attr('href')
             rssUrl: querystring.unescape trs.eq(2).find('a').eq(1).attr('href').split('=')[1]
 
