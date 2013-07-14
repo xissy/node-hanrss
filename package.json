@@ -1,11 +1,11 @@
 {
   "name": "hanrss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Taeho Kim",
     "email": "xissysnd@gmail.com"
   },
-  "main": "lib/index",
+  "main": "index",
   "dependencies": {
     "coffee-script": ">= 1.6.3",
     "async": ">= 0.2.9",
@@ -19,7 +19,7 @@
     "url": "https://github.com/xissy/node-hanrss.git"
   },
   "bugs": {
-    "url": "http://github.com/xissy/node-hanrss/issues"
+    "url": "https://github.com/xissy/node-hanrss/issues"
   },
   "devDependencies": {
     "should": ">= 1.0.0",
